@@ -1,0 +1,52 @@
+[tool.black]
+line-length = 240
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[tomli]>=6.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openmmdata"
+version = "0.1.0"
+authors = [
+    { name = "Kaichen Zhang", email = "kaichenzhang358@outlook.com" },
+]
+description = "Data utils for openmmreasoner"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "torch",
+    "torchvision",
+    "hf_transfer",
+    "datasets",
+    "transformers",
+    "semhash",
+    "scikit-learn",
+    "imagededup",
+    "qwen_vl_utils",
+    "accelerate",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+exclude = [
+    "test"
+]
+
+[tool.wheel]
+exclude = [
+    "test"
+]
+
+[project.scripts]
+
+[project.urls]
+Homepage = "https://xxx.github.io"
+Repository = "https://github.com/EvolvingLMMs-Lab/OpenMMReasoner"

@@ -1,0 +1,10 @@
+datasets:
+  - path: /path/to/LLaVA-Cot-100k/llava_cot_train.parquet
+    data_folder: "" # Add the data folder for the images folder of the dataset
+    data_type: parquet
+  - path: /path/to/OpenVLThinker-sft-iter3/OpenVLThinker-sft-iter3.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/We-Math2.0-SFT/We-Math2.0-SFT.parquet
+    data_folder: ""
+    data_type: parquet

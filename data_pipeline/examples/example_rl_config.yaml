@@ -1,0 +1,26 @@
+
+datasets:
+  - path: /path/to/ThinkLite-VL-hard-11k/thinklite_vl_hard_train.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/We-Math2.0-Pro/wemath_pro.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/We-Math2.0-Standard/wemath_standard.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/AlgoPuzzleVQA/algopuzzle_train.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/MMK12/mmk12_train.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/TQA/tqa_train.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/ViRL39K/virl39k_train.parquet
+    data_folder: ""
+    data_type: parquet
+  - path: /path/to/PuzzleVQA/puzzlevqa_train.parquet
+    data_folder: ""
+    data_type: parquet
