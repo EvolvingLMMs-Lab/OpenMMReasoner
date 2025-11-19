@@ -1,7 +1,0 @@
-"dataset_name": "college_medicine"
-"description": "The following are multiple choice questions (with answers) about college\
-  \ medicine.\n\n"
-"include": "_default_template_yaml"
-"tag": "mmlu_thinking_other"
-"task": "mmlu_thinking_college_medicine"
-"task_alias": "college medicine"

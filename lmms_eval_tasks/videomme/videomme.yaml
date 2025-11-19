@@ -1,6 +1,0 @@
-task: videomme_reward
-doc_to_text: !function utils.videomme_doc_to_text
-doc_to_target: "answer"
-doc_to_messages: !function utils.videomme_doc_to_messages
-include: _default_template_yaml
-tag: video_reasoning

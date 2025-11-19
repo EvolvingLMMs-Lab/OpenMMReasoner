@@ -1,7 +1,0 @@
-"dataset_name": "world_religions"
-"description": "The following are multiple choice questions (with answers) about world\
-  \ religions.\n\n"
-"include": "_default_template_yaml"
-"tag": "mmlu_thinking_humanities"
-"task": "mmlu_thinking_world_religions"
-"task_alias": "world religions"

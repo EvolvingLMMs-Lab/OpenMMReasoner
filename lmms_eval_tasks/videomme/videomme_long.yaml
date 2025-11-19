@@ -1,8 +1,0 @@
-task: videomme_long_reward
-tag: 
-  - video_reasoning_long
-doc_to_text: !function utils.videomme_doc_to_text
-doc_to_target: "answer"
-doc_to_messages: !function utils.videomme_doc_to_messages
-process_docs: !function utils.videmme_process_docs
-include: _default_template_yaml

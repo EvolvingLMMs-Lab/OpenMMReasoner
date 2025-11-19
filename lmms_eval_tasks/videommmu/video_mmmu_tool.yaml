@@ -1,5 +1,0 @@
-group: video_mmmu_reasoning_tool
-task:
-- video_mmmu_adaptation_reasoning_tool
-- video_mmmu_comprehension_reasoning_tool
-- video_mmmu_perception_reasoning_tool

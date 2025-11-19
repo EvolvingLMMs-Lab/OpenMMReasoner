@@ -1,5 +1,0 @@
-group: video_mmmu_random_choice
-task:
-- video_mmmu_adaptation_random_choice
-- video_mmmu_comprehension_random_choice
-- video_mmmu_perception_random_choice

@@ -1,8 +1,0 @@
-group: video_mmmu_reasoning
-tag: 
-  - video_reasoning
-  - video_reasoning_long
-task:
-- video_mmmu_adaptation_reasoning
-- video_mmmu_comprehension_reasoning
-- video_mmmu_perception_reasoning

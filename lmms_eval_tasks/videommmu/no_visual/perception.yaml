@@ -1,6 +1,0 @@
-dataset_name: "Perception"
-task: "video_mmmu_perception_no_visual"
-doc_to_text: !function utils.videommmu_doc_to_text_perception_comprehension
-doc_to_messages: !function utils.videommmu_doc_to_messages_perception_comprehension
-include: _default_template_yaml
-process_results: !function utils.videommmu_process_results_perception_comprehension

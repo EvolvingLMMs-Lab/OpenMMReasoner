@@ -1,5 +1,0 @@
-group: video_mmmu_no_visual
-task:
-- video_mmmu_adaptation_no_visual
-- video_mmmu_comprehension_no_visual
-- video_mmmu_perception_no_visual

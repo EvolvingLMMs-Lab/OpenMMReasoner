@@ -1,7 +1,0 @@
-task: videomme_reward_tool
-doc_to_text: !function utils.videomme_doc_to_text
-doc_to_messages: !function utils.videomme_tool_doc_to_messages
-doc_to_target: "answer"
-include: _default_template_yaml
-generation_kwargs:
-  max_new_tokens: 49152

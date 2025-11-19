@@ -1,5 +1,0 @@
-task: videomme_w_subtitle_reward_tool
-doc_to_text: !function utils.videomme_doc_to_text_subtitle
-doc_to_target: "answer"
-include: _default_template_yaml
-tag: video_reasoning

@@ -1,7 +1,0 @@
-"dataset_name": "college_chemistry"
-"description": "The following are multiple choice questions (with answers) about college\
-  \ chemistry.\n\n"
-"include": "_default_template_yaml"
-"tag": "mmlu_thinking_stem"
-"task": "mmlu_thinking_college_chemistry"
-"task_alias": "college chemistry"
