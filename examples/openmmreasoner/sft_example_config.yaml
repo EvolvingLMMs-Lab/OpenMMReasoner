@@ -1,0 +1,74 @@
+trainer_type: fsdp2_trainer
+
+dataset_config:
+  extra_kwargs: {}
+  dataset_type: vision_iterable ##vision
+  dataset_format: yaml
+  processor_config:
+    processor_name: Qwen/Qwen2.5-VL-7B-Instruct
+    processor_type: qwen2_5_vl
+  # Update this to your dataset path
+  datasets:
+      - path: /path/to/your/dataset/llava_cot.parquet
+        data_folder: "/path/to/your/dataset/images"
+        data_type: parquet
+      - path: /path/to/your/dataset/m1_sft.parquet
+        data_folder: "/path/to/your/dataset/images"
+        data_type: parquet
+      - path: /path/to/your/dataset/mmr1_filtered.parquet
+        data_folder: "/path/to/your/dataset/images"
+        data_type: parquet
+      - path: /path/to/your/dataset/OpenVLThinker-sft-iter3.parquet
+        data_folder: "/path/to/your/dataset/images"
+        data_type: parquet
+      - path: /path/to/your/dataset/WeMath.parquet
+        data_folder: "/path/to/your/dataset/images"
+        data_type: parquet
+      
+  shuffle: true
+  eval_dataset_path: null
+  object_storage: none
+  bucket_name: null
+  packing: true
+  packing_strategy: first_fit
+  packing_length: 61440
+  filter_overlong: true
+  filter_overlong_workers: 8
+  fps: 1
+  video_backend: qwen_vl_utils
+  extra_kwargs:
+    image_max_pixels: 4194304
+
+model_config:
+  load_from_pretrained_path: "Qwen/Qwen2.5-VL-7B-Instruct"
+  attn_implementation: "flash_attention_2"
+    
+# Training arguments, mostly compatible with HuggingFace Trainer
+trainer_args:
+  per_device_train_batch_size: 1
+  learning_rate: 5.0e-05 # we should use 1.0 to makes YAML recognize it as a float
+  weight_decay: 0.0
+  gradient_accumulation_steps: 1
+  gradient_checkpointing: true
+  max_steps: 4300
+  num_train_epochs: 1
+  save_steps: 2000
+  save_total_limit: 3
+  report_to: "none"
+  output_dir: "./output/openmmreasoner"
+  warmup_ratio: 0.1
+  run_name: "openmmreasoner"
+  eval_strategy: "no"
+  logging_steps: 1
+  group_by_length: false
+  dataloader_num_workers: 4
+  bf16: true
+  lr_scheduler_type: "cosine"
+  dataloader_prefetch_factor: 4
+  use_liger_kernel: true
+  use_rmpad: true
+  fsdp2: true
+  fsdp_config:
+    transformer_layer_cls_to_wrap: ["Qwen2_5_VLDecoderLayer"]
+    reshard_after_forward: false
+  sp_ulysses_degree: 1
