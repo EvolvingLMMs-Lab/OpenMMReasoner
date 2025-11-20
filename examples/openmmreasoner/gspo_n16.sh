@@ -81,13 +81,13 @@ DATA_FOLDER=/path/to/your/data
 
 experiment_name="gspo-n${n_resp_per_prompt}-tp${temperature}-${SFT_MODEL}-RL-${loss_mode}-epslow-${clip_ratio_low}-epshigh-${clip_ratio_high}"
 
-PROJECT_FOLDER=/pfs/training-data/kemingwu/workspace/unify_model/verl/checkpoints/$experiment_name
+PROJECT_FOLDER=/path/to/your/project/$experiment_name
 
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=${adv_estimator} \
     actor_rollout_ref.actor.policy_loss.loss_mode=${loss_mode} \
     data.train_files=[$DATA_FOLDER/algopuzzle_train.parquet,$DATA_FOLDER/mmk12_train.parquet,$DATA_FOLDER/puzzlevqa_train.parquet,$DATA_FOLDER/thinklite_vl_hard_train.parquet,$DATA_FOLDER/tqa_train.parquet,$DATA_FOLDER/virl39k_train.parquet,$DATA_FOLDER/wemath_standard.parquet,$DATA_FOLDER/wemath_pro.parquet] \
-    data.val_files=/pfs/training-data/kaichenzhang/data/opendata/val.parquet \
+    data.val_files=${DATA_FOLDER}/val.parquet \
     data.shuffle=$shuffle_dataset \
     data.prompt_key=prompt \
     data.truncation='error' \
