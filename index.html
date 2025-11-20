@@ -78,7 +78,7 @@
                                                   target="_blank">Bin Wang<sup>♣️</sup>,
                         </span>
                         <span class="author-block">
-                            <a href="https://xingxuanli.github.io/"
+                            <sup>†</sup><a href="https://xingxuanli.github.io/"
                             target="_blank">Xingxuan Li<sup>♠️</sup>,
                         </span>
                         <span class="author-block">
@@ -96,6 +96,7 @@
                             <span class="author-block"><sup>*</sup> Equal Contribution</span>
                             <br>
                             <span class="author-block">Corresponding to:</span>
+                            <span class="author-block"><a href="mailto:xingxuan.li@miromind.ai">xingxuan.li@miromind.ai</a></span>,
                             <span class="author-block"><a href="mailto:lidong.bing@miromind.ai">lidong.bing@miromind.ai</a></span>
 
                     </div>
@@ -124,7 +125,7 @@
                                 </span>
 
                                 <span class="link-block">
-                                    <a href="https://huggingface.co/lmms-lab/OpenMMReasoner-SFT-Data" target="_blank"
+                                    <a href="https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-SFT-874K" target="_blank"
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-database"></i>
@@ -134,7 +135,7 @@
                                   </span>
                                 
                                   <span class="link-block">
-                                    <a href="https://huggingface.co/lmms-lab/OpenMMReasoner-RL-Data" target="_blank"
+                                    <a href="https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-RL-74K" target="_blank"
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fas fa-database"></i>
@@ -144,7 +145,7 @@
                                   </span>
 
                                   <span class="link-block">
-                                    <a href="https://huggingface.co/lmms-lab/OpenMMReasoner" target="_blank"
+                                    <a href="https://huggingface.co/OpenMMReasoner/OpenMMReasoner-RL" target="_blank"
                                        class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                           🤗
@@ -167,24 +168,6 @@
      <br> <br> <br>
 
              <!-- Image carousel -->
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered">
-                    <div class="column is-full">
-                        <div class="item">
-                            <!-- Your image here -->
-                            <img src="static/images/teaser.pdf" alt="OpenMMReasoner-Teaser" />
-                            <h2 class="subtitle">
-                                <b>Performance Comparison with State-of-the-Art Large Multimodal Reasoning Models across Various Benchmarks.</b>
-                                Our proposed <b>OpenMMReasoner</b> consistently outperforms competing methods, highlighting its effectiveness in complex reasoning tasks.
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     
      <section class="section hero is-light">
         <div class="container is-max-desktop">
@@ -209,7 +192,24 @@
       </section>
       
 
-
+      <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img src="static/images/teaser.png" alt="OpenMMReasoner-Teaser" />
+                            <h2 class="subtitle">
+                                <b>Performance Comparison with State-of-the-Art Large Multimodal Reasoning Models across Various Benchmarks.</b>
+                                Our proposed <b>OpenMMReasoner</b> consistently outperforms competing methods, highlighting its effectiveness in complex reasoning tasks.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section hero is-light">
         <div class="container is-max-desktop">
           <div class="columns is-centered has-text-centered">
@@ -232,8 +232,8 @@
                       <div class="column is-full">
                           <div class="item">
                               <!-- Your image here -->
-                              <img src="static/images/pipeline.pdf" alt="pipeline" />
-                              <img src="static/images/data_distribution.pdf" alt="data_distribution" />
+                              <img src="static/images/pipeline.png" alt="pipeline" />
+                              <img src="static/images/data_distribution.png" alt="data_distribution" />
                               <!-- <h2 class="subtitle">
                                   Our dataset has the most diverse, highest-quality image editing pairs of any resolution.
                               </h2> -->
@@ -244,24 +244,107 @@
           </div>
       </section>
       
-    <section class="hero">
-        <div class="columns is-centered has-text-centered">
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-              <h2 class="title is-3">Experimental Results on Visual Reasoning Benchmarks.</h2>
+              <h2 class="title is-3">Experimental Results on Visual Reasoning Benchmarks</h2>
               <div class="content has-text-justified">
                 <p>
-                    We evaluate our approach on a suite of public visual reasoning benchmarks.
+                    We evaluate our approach on a suite of public visual reasoning benchmarks. Extensive evaluations demonstrate that our training recipe not only surpasses strong baselines but also highlights the critical role of data quality and training design in shaping multimodal reasoning performance. Notably, our method achieves a <b>11.6%</b> improvement over the Qwen2.5-VL-7B-Instruct baseline across nine multimodal reasoning benchmarks, establishing a solid empirical foundation for future large-scale multimodal reasoning research. 
                 </p>
-                <div class="box m-5">
-                    <div class="content has-text-centered">
-                      <img src="static/images/main_exp.png" alt="RL results" class="center" width="150%"/>
-                    </div>
-                  </div>
               </div>
             </div>
           </div>
-
+        </div>
     </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="item">
+                            <img src="static/images/main_exp.png" alt="RL results" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Analysis and Insights for SFT</h2>
+              <div class="content has-text-justified">
+                <p>
+                    <p>Our Analysis and Insights for SFT are as follows:</p>
+      
+                    <p><b>(1) Answer diversity enhances reasoning.</b>  
+                        Increasing the diversity of generated answers consistently improves the model's overall reasoning performance, even when using the same question sources, suggesting that exposure to varied solutions strengthens understanding.</p>
+        
+                    <p><b>(2) Teacher model selection is crucial.</b>  
+                        Distilling from a strong teacher model substantially boosts the model's reasoning ability while maintaining high data efficiency. Careful selection for teacher model directly affects the quality of the distilled dataset and the final model performance.</p>
+        
+                    <p><b>(3) Over-filtering reduces diversity and performance.</b>  
+                        The best results are achieved without excessive filtering, indicating that maintaining greater answer diversity encourages more robust reasoning abilities.</p>
+
+                    <p><b>(4) Cross-domain knowledge improves generalization.</b>  
+                        Incorporating diverse data from multiple domains consistently enhances the model's overall reasoning capabilities across tasks.</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Analysis and Insights for RL</h2>
+              <div class="content has-text-justified">
+                <p>
+                    <p>Our Analysis and Insights for RL are as follows:</p>
+      
+                    <p><b>(1) GSPO outperforms other algorithms.</b>  
+                        GSPO demonstrates superior stability and faster convergence compared to alternative methods in multimodal RL training.</p>
+        
+                    <p><b>(2) Token efficiency is crucial.</b>  
+                        While increasing reasoning steps at test time can improve performance, excessive tokens reduce efficiency. Our results show that a smaller reasoning budget can achieve comparable or even better accuracy.</p>
+        
+                    <p><b>(3) Reasoning ability transfers across domains.</b>  
+                        Gains in reasoning during training consistently translate into stronger performance across multiple domains.</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img src="static/images/RL_exp.png" alt="pipeline" />
+                            <img src="static/images/RL_curve.png" alt="data_distribution" />
+                            <img src="static/images/val_curves.png" alt="data_distribution" />
+                            <!-- <h2 class="subtitle">
+                                Our dataset has the most diverse, highest-quality image editing pairs of any resolution.
+                            </h2> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- End image carousel -->
 
             <!-- Image carousel -->
