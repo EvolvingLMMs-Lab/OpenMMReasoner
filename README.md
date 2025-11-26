@@ -12,7 +12,7 @@
 </div>
 
 ## 🎉 News
-
+- **[2025-11]**: 🏆: **Top \#1 Paper** of the day at HuggingFace Daily Papers (Nov.24, 2025), Welcome to checkout our [OpenMMReasoner HF Daily Paper](https://huggingface.co/papers/2511.16334)!
 - **[2025-11]**: Join our WeChat group by scanning this [QR code](assets/wechat_qr.jpg).
 - **[2025-11]**: We release all of our code, model, data, and pipeline! Check out the [OpenMMReasoner collection on Hugging Face](https://huggingface.co/collections/lmms-lab/openmmreasoner).
 
