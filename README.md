@@ -17,7 +17,7 @@
 </div>
 
 ## 🎉 News
-- **[2025-12]**: We are invited to BAAI Live Talk! Check out the [Slides & Recording](https://event.baai.ac.cn/activities/983).
+- **[2025-12]**: We are invited to BAAI Talk! Check out the [slides and recording](https://event.baai.ac.cn/activities/983).
 - **[2025-11]**: We have created two fun slides ([Doraemon](https://github.com/EvolvingLMMs-Lab/OpenMMReasoner/blob/main/vibe_slides/OpenMMReasoner_x_Doraemon.pdf) & [Pokemon](https://github.com/EvolvingLMMs-Lab/OpenMMReasoner/blob/main/vibe_slides/OpenMMReasoner_x_Pokemon.pdf)) to explain OpenMMReasoner. Enjoy :) Credit to the amazing [NotebookLM](https://notebooklm.google.com/) and [Gemini-3](https://blog.google/products/gemini/gemini-3/#learn-anything).
 - **[2025-11]**: 🏆: **Top \#1 Paper** of the day at HuggingFace Daily Papers (Nov.24, 2025), Welcome to checkout our [OpenMMReasoner HF Daily Paper](https://huggingface.co/papers/2511.16334)!
 - **[2025-11]**: Join our WeChat group by scanning this [QR code](assets/wechat_qr.jpg).
