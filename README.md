@@ -90,6 +90,7 @@ uv pip install -e .
 We recommend you to use separate environments if you encounter a conflict in requirements.
 
 ## Getting Started
+Our SFT experiments were conducted on 32x A800 80GB GPUs, while our RL experiments were conducted on 64x A800 80GB GPUs.
 
 ### Data Preparation
 
